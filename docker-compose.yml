@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  redmine:
+    image: redmine
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    volumes:
+      - ./volumes/files:/usr/src/redmine/files
+      - type: bind
+        source: ./volumes/sqlite/redmine.db
+        target: /usr/src/redmine/sqlite/redmine.db
