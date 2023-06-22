@@ -15,4 +15,6 @@ Also, if you **upload a file** like a **PDF** or an **image** you will have it *
 
 * Change the ports if you need it
 
+* Add the desired plugins in the plugin folder that is linked to the redmine's plugin folder
+
 * Just do **docker-compose up -d**

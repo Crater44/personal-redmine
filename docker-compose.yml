@@ -7,6 +7,7 @@ services:
       - 3000:3000
     volumes:
       - ./volumes/files:/usr/src/redmine/files
+      - ./volumes/plugins:/usr/src/redmine/plugins
       - type: bind
         source: ./volumes/sqlite/redmine.db
         target: /usr/src/redmine/sqlite/redmine.db
