@@ -2,10 +2,12 @@
 
 This project is a **Redmine image** with the data **linked** to the folders with volumes **into the filesystem**
 
-This way you can **export** the entire folder to **make backups** of your personal sprints with **ease**.
+This way you can **export** the entire folder to **make backups** of your personal sprints with **ease**
 
 **Redmine** uses **sqlite** by default for db storage, that makes the data **export** a **lightweight file** in
 ./volumes/sqlite/redmine.db
+
+It has **plugin setup support** via the volume folder "plugins", so if you need it just download them there
 
 Also, if you **upload a file** like a **PDF** or an **image** you will have it **linked** to the **volume files**
 
@@ -15,6 +17,6 @@ Also, if you **upload a file** like a **PDF** or an **image** you will have it *
 
 * Change the ports if you need it
 
-* Add the desired plugins in the plugin folder that is linked to the redmine's plugin folder
+* **Add the** desired **plugins in the** plugin **folder** that is linked to the redmine's plugin folder
 
 * Just do **docker-compose up -d**
