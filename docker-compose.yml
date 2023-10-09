@@ -11,3 +11,9 @@ services:
       - type: bind
         source: ./volumes/sqlite/redmine.db
         target: /usr/src/redmine/sqlite/redmine.db
+      - type: bind
+        source: ./volumes/custom_javascript/base.html.erb
+        target: /usr/src/redmine/app/views/layouts/base.html.erb
+      - type: bind
+        source: ./volumes/custom_javascript/custom.js
+        target: /usr/src/redmine/public/javascripts/custom.js
